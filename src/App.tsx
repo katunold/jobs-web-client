@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import GlobalStyles from "./components/GlobalStyles";
+import Theme from "./components/ThemeProvider";
+import {AppMachineProvider} from "./utils/context";
+import Public from "./components/public";
+import {BrowserRouter, Route} from 'react-router-dom';
 
 const App = () => {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <AppMachineProvider>
+            <React.Fragment>
+                <Theme>
+                    <GlobalStyles />
+                    <BrowserRouter>
+                        <switch>
+                            <Route path="/" component={Public} />
+                        </switch>
+                    </BrowserRouter>
+                </Theme>
+            </React.Fragment>
+        </AppMachineProvider>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
-import GlobalStyles from "./components/GlobalStyles";
-import Theme from "./components/ThemeProvider";
+import GlobalStyles from "./components/shared/GlobalStyles";
+import Theme from "./components/shared/ThemeProvider";
 import {AppMachineProvider} from "./utils/context";
-import Public from "./components/public";
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Route} from "react-router-dom";
+import Home from "./components/home";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
                     <GlobalStyles />
                     <BrowserRouter>
                         <switch>
-                            <Route path="/" component={Public} />
+                            <Route exact path="/" component={Home}/>
+                            <Route path="/contact" component={Contact}/>
                         </switch>
                     </BrowserRouter>
                 </Theme>

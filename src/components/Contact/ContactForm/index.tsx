@@ -3,13 +3,13 @@
 import React from 'react';
 import { useMachine } from '@xstate/react';
 import machine from './machine';
-import SuccessfulSubmission from '../../SuccessfulSubmission';
-import { InputField, TextArea, SelectField } from '../../form';
-import { selectOptions } from '../../Countries';
+import SuccessfulSubmission from '../../shared/SuccessfulSubmission';
+import { InputField, TextArea, SelectField } from '../../shared/form';
+import { selectOptions } from '../../shared/Countries';
 import * as yup from 'yup';
 import { trackClick } from '../../../utils/analyticsTracker';
-import { ContactForm } from '../../form/ContactForm';
-import { BlueActionButton } from '../../Buttons';
+import { ContactForm } from '../../shared/form/ContactForm';
+import { BlueActionButton } from '../../shared/Buttons';
 
 interface FormValues {
   name: string;

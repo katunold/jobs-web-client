@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { ReactComponent as HomepageImage } from '../../../assets/svg/public/analytics.svg';
 import mq from '../../../utils/mq';
-import RequestPlan from '../section2/sub-section1/request-plan';
+import RequestPlan from './request-plan';
 
 const Container = styled.section`
   margin: 0 !important;

@@ -35,6 +35,10 @@ const Div = styled.div`
     line-height: 1;
     letter-spacing: .2rem;
   }
+  
+  #lastspan {
+   margin-bottom: 4vh;
+  }
 
   ${mq.tablet`
     justify-content: top;   
@@ -95,7 +99,7 @@ const Section1: React.FC = () => (
                       <span>
                           Comprehensive. Realtime. No middlemen
                       </span>
-                      <span>
+                      <span id="lastspan">
                           Built for sales and analytics teams
                       </span>
                       <RequestPlan/>

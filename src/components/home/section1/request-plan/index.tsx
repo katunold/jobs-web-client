@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   width: auto;
-  margin-top: 4vh;
   display: flex; 
 `;
 
@@ -62,8 +61,8 @@ const Button = styled.button`
   height: 4vh;
   margin-left: 1vw;
   font-size: 0.9em;
-  min-width: 180px;
-  width: 2vw;
+  min-width: 120px;
+  width: 1vw;
   text-align: center;
   &:hover {
     background-color: ${(props: any): string => props.theme.colors.primary};
@@ -77,7 +76,7 @@ const RequestPlan: React.FC = () => {
     return(
       <Wrapper>
           <Input placeholder="Enter your email address"/>
-          <Button>Submit</Button>
+          <Button>Request Pilot</Button>
       </Wrapper>
     );
 };

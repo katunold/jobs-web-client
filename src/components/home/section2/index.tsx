@@ -8,10 +8,6 @@ const Container = styled.section`
   margin: 0 !important;
   position: relative;
   height: 92vh;
-
-  ${mq.tablet`
-    margin: 0 0 6em 0 !important;
-  `}
 `;
 
 

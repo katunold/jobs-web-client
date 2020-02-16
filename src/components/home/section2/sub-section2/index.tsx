@@ -9,9 +9,6 @@ const Container = styled.section`
   height: 40%;
   background-color: ${(props: any): any => props.theme.colors.blue};
 
-  ${mq.tablet`
-    margin: 0 0 6em 0 !important;
-  `}
 `;
 
 const Content = styled.div`

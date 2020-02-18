@@ -9,14 +9,13 @@ const BlueActionButton = styled.button`
   background-color: ${(props: any): string =>
     props.theme.colors.primary} !important;
   font-weight: 700;
-  padding: 0.9em 1.5em;
-  border-radius: 2px;
+  border-radius: 0px 5px 5px 5px;
   border: 0.09rem solid ${(props: any): string => props.theme.colors.primary};
-  height: 48px;
-  margin: 0;
+  height: 4vh;
+  margin-left: 1vw;
   font-size: 0.9em;
-  min-width: 180px;
-  width: 100%;
+  min-width: 120px;
+  width: 1vw;
   text-align: center;
   &:hover {
     background-color: ${(props: any): string => props.theme.colors.primary};
@@ -24,11 +23,6 @@ const BlueActionButton = styled.button`
     opacity: 0.5;
     cursor: pointer;
   }
-
-  ${mq.laptop`
-    width: 100%;
-    padding: 0.75em 1.5em;
-  `};
 `;
 
 export default BlueActionButton;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import BlueActionButton from "../../../shared/Buttons/BlueActionButton";
 
 const Wrapper = styled.div`
   width: auto;
@@ -10,7 +11,7 @@ const Input = styled.input`
   width: 20vw;
   height: 4vh;
   display: in-line;
-  border-radius: 5px;
+  border-radius: 0px 5px 5px 5px;
   border: 1px solid ${(props: any): string => props.theme.colors.border};
   margin-bottom: 1em;
   padding: 0 1em;
@@ -47,36 +48,11 @@ const Input = styled.input`
     props.theme.colors.white};
 `;
 
-const Button = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: ${(props: any): string => props.theme.colors.white};
-  background-color: ${(props: any): string =>
-    props.theme.colors.primary} !important;
-  font-weight: 700;
-  // padding: 0.9em 1.5em;
-  border-radius: 2px;
-  border: 0.09rem solid ${(props: any): string => props.theme.colors.primary};
-  height: 4vh;
-  margin-left: 1vw;
-  font-size: 0.9em;
-  min-width: 120px;
-  width: 1vw;
-  text-align: center;
-  &:hover {
-    background-color: ${(props: any): string => props.theme.colors.primary};
-    color: white;
-    opacity: 0.5;
-    cursor: pointer;
-  }
-`;
-
 const RequestPlan: React.FC = () => {
     return(
       <Wrapper>
           <Input placeholder="Enter your email address"/>
-          <Button>Request Pilot</Button>
+          <BlueActionButton>Request Pilot</BlueActionButton>
       </Wrapper>
     );
 };

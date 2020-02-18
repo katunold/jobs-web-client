@@ -3,7 +3,7 @@ import { ThemeProvider, DefaultTheme } from 'styled-components';
 
 export const theme: DefaultTheme = {
   colors: {
-    primary: '#0091f2',
+    primary: '#242248',
     secondary: '#FEBA02',
     background: '#F2F6FA',
     secondaryBlue: '#3C35F7',
@@ -30,7 +30,7 @@ export const theme: DefaultTheme = {
     silverChalice: '#afafaf',
     regentGray: '#949ba0',
     blackPearl: '#061b27',
-    jordyBlue: '#91c3f4',
+    jordyBlue: '#CEDAFD',
     linkWaterTwo: '#e9f2f8',
     oldBrick: '#8b1b1b',
     matisse: '#256eac',

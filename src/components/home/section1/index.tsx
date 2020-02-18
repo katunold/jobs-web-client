@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { ReactComponent as HomepageImage } from '../../../assets/svg/public/analytics.svg';
-import mq from '../../../utils/mq';
-import RequestPlan from './request-plan';
+import React from "react";
+import styled from "styled-components";
+import { ReactComponent as HomepageImage } from "../../../assets/svg/public/blossom-jobs-hero-banner-01.svg";
+import mq from "../../../utils/mq";
+import RequestPlan from "./request-plan";
 
 const Container = styled.section`
   margin: 0 !important;
@@ -20,29 +20,28 @@ const Div = styled.div`
   display: flex;
   flex-flow: column;
   text-align: center;
-  align-items: center;
-
+  
   h1 {
     font-weight: 500;
     padding-top: 2em;
     margin-bottom: 0.5em;
     line-height: 1.25;
   }
-  
+
   span {
     font-weight: 200;
     margin-bottom: 0.5em;
     line-height: 1;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
   }
-  
+
   #lastspan {
-   margin-bottom: 4vh;
+    margin-bottom: 4vh;
   }
 
   ${mq.tablet`
     justify-content: top;   
-    padding: 6em 0;
+    padding: 1em 0;
     text-align: left;
     align-items: flex-start;
 
@@ -50,17 +49,14 @@ const Div = styled.div`
       margin-top: 0;
     }
   `}
-
 `;
 
 const Wrapper = styled.section`
   position: relative;
   height: 92vh;
   ${mq.tablet`top: 0;`}
-  background-color: ${(props: any): any =>
-    props.theme.colors.jordyBlue};
+  background-color: ${(props: any): any => props.theme.colors.jordyBlue};
 `;
-
 
 const Content = styled.div`
   display: flex;
@@ -68,9 +64,7 @@ const Content = styled.div`
   height: 100%;
   justify-content: center;
   align-items: center;
-  padding: 3rem 1rem;
-
-  ${mq.tablet`padding: 4rem 2rem;`}
+  padding: 10rem 1rem;
 `;
 
 const Main = styled.main`
@@ -80,34 +74,39 @@ const Main = styled.main`
 `;
 
 const HomepageSVG = styled(HomepageImage)`
-  margin-left: 10vw;
-  margin-top: 10vh;
-  width: 60vw;
-  height: 60vh;
+  margin: 0;
+  width: 40vw;
+  height: 40vh;
 `;
 
+const ImageDiv = styled.div`
+  display: flex;
+  padding-top: 3.5vh;
+  padding-left: 8vw;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+`;
 
 const Section1: React.FC = () => (
   <Wrapper>
-      <Content>
-          <Main>
-              <Container>
-                  <Div>
-                      <h1>
-                          Job postings data.
-                      </h1>
-                      <span>
-                          Comprehensive. Realtime. No middlemen
-                      </span>
-                      <span id="lastspan">
-                          Built for sales and analytics teams
-                      </span>
-                      <RequestPlan/>
-                  </Div>
-                  <HomepageSVG />
-              </Container>
-          </Main>
-      </Content>
+    <Content>
+      <Main>
+        <Container>
+          <Div>
+            <h1>Job postings data.</h1>
+            <span>Comprehensive. Realtime. No middlemen</span>
+            <span id="lastspan">Built for sales and analytics teams</span>
+            <RequestPlan />
+          </Div>
+          <ImageDiv>
+            <HomepageSVG />
+          </ImageDiv>
+        </Container>
+      </Main>
+    </Content>
   </Wrapper>
 );
 

@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { ReactComponent as Indexed } from "../../../../assets/svg/public/indexed.svg";
-import { ReactComponent as Package } from "../../../../assets/svg/public/package.svg";
-import { ReactComponent as Coverage } from "../../../../assets/svg/public/coverage.svg";
+import { ReactComponent as Indexed } from "../../../../assets/svg/public/fully-indexed-01.svg";
+import { ReactComponent as Package } from "../../../../assets/svg/public/full-package.svg";
+import { ReactComponent as Coverage } from "../../../../assets/svg/public/full-coverage-01.svg";
 import mq from "../../../../utils/mq";
 
 const Container = styled.section`
@@ -37,13 +37,13 @@ const Card = styled.div`
   align-items: center;
   width: 30%;
   height: 100%;
-  
+
   h4 {
     font-weight: 500px;
     line-height: 1;
     letter-spacing: 0.1rem;
   }
-  
+
   blockquote {
     font-weight: 200;
     font-size: 16px;
@@ -80,27 +80,24 @@ const SubSection1: React.FC = () => {
             <FullyIndexedIcon />
             <h4>Fully Indexed</h4>
             <blockquote>
-              Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet
-              quam id dui posuere blandit. Vivamus magna justo, lacinia eget
-              consectetur sed, convallis at tellus.
+              Search across the entire text of the posting, with keyword
+              matching. Lorem epsom opsum epsom opsum epsom opsum.
             </blockquote>
           </Card>
           <Card>
             <FullCoverageIcon />
             <h4>Full Coverage</h4>
             <blockquote>
-              Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet
-              quam id dui posuere blandit. Vivamus magna justo, lacinia eget
-              consectetur sed, convallis at tellus.
+              All companies from fortune 500s to startups. All over the world.
+              Lorem epsom opsum epsom opsum epsom opsum.
             </blockquote>
           </Card>
           <Card>
             <FullPackageIcon />
             <h4>Full Package</h4>
             <blockquote>
-              Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet
-              quam id dui posuere blandit. Vivamus magna justo, lacinia eget
-              consectetur sed, convallis at tellus.
+              Whether it’s raw data you’re after or some help with analytics,
+              we’ve got you covered.
             </blockquote>
           </Card>
         </Main>

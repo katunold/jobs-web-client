@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {ReactComponent as LandingPage} from "../../../../assets/svg/public/windows.svg";
+import {ReactComponent as Screen} from "../../../../assets/svg/public/screen-1.svg";
 
 const Container = styled.section`
   margin: 0 !important;
@@ -38,10 +38,18 @@ const Section = styled.div`
 
 const TextSection = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-start;
   width: 50%;
   height: auto;
+`;
 
+const Text = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: auto;
+  
   h1 {
     font-weight: 500px;
     color: ${(props): any => props.theme.colors.darkGrey};
@@ -75,7 +83,7 @@ const ImageSection = styled.div`
   height: 100%;
 `;
 
-const LandingPageImage = styled(LandingPage)`
+const ScreenIcon = styled(Screen)`
   width: 40vw;
   height: 40vh;
 `;
@@ -86,17 +94,19 @@ const SubSection3: React.FC = () => (
             <Main>
                 <Section>
                     <TextSection>
-                        <h1>#3</h1>
-                        <h4>Lorem ipsum dolor sit amet</h4>
-                        <blockquote>
-                            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-                            Nulla quis lorem ut libero malesuada feugiat. Sed porttitor lectus
-                            nibh. Praesent sapien massa, convallis a pellentesque nec, egestas
-                            non nisi.
-                        </blockquote>
+                        <Text>
+                            <h1>#3</h1>
+                            <h4>Lorem ipsum dolor sit amet</h4>
+                            <blockquote>
+                                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                                Nulla quis lorem ut libero malesuada feugiat. Sed porttitor lectus
+                                nibh. Praesent sapien massa, convallis a pellentesque nec, egestas
+                                non nisi.
+                            </blockquote>
+                        </Text>
                     </TextSection>
                     <ImageSection>
-                        <LandingPageImage />
+                        <ScreenIcon />
                     </ImageSection>
                 </Section>
             </Main>

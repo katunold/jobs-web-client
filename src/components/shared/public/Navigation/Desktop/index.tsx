@@ -33,8 +33,8 @@ const Desktop: React.FC = () => {
     <Wrapper>
       <ul>
         <li>
-          <Link className="link" to="/signin" onClick={trackClick}>
-            Sign In
+          <Link className="link" to="/contact" onClick={trackClick}>
+            Contact us
           </Link>
         </li>
         <li>

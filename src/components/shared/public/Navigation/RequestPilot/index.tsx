@@ -10,7 +10,7 @@ const Container = styled.button`
   background-color: ${(props: any): string => props.theme.colors.primary};
   text-align: center;
   font-size: 1rem;
-  border-radius: 2px;
+  border-radius: 0px 5px 5px 5px;
   text-decoration: none;
 
   &:hover {

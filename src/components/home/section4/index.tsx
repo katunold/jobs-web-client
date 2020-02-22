@@ -6,7 +6,6 @@ import SubSection2 from "./sub-section2";
 
 const Wrapper = styled.section`
   position: relative;
-  height: 60vh;
   display: flex;
   flex-direction: column;
   margin-top: 0;

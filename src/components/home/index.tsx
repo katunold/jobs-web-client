@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   margin-top: 64px;
   overflow: hidden;
   width: 100%;
-  min-height: 100%;
+  // min-height: 100%;
 
   ${mq.tablet`margin-top: 75px;`}
 `;

@@ -1,19 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import BlueActionButton from "../../../shared/Buttons/BlueActionButton";
-
 const Wrapper = styled.div`
   width: auto;
   display: flex; 
 `;
-
 const Input = styled.input`
   width: 20vw;
-  height: 4vh;
+  min-width: 160px;
+  height: 5vh;
   display: in-line;
   border-radius: 0px 5px 5px 5px;
   border: 1px solid ${(props: any): string => props.theme.colors.border};
   margin-bottom: 1em;
+  margin-right: 1vw;
   padding: 0 1em;
   ::placeholder,
   ::-webkit-input-placeholder {
@@ -47,14 +47,12 @@ const Input = styled.input`
   background-color: ${(props: any): string =>
     props.theme.colors.white};
 `;
-
 const RequestPlan: React.FC = () => {
     return(
-      <Wrapper>
-          <Input placeholder="Enter your email address"/>
-          <BlueActionButton>Request Pilot</BlueActionButton>
-      </Wrapper>
+        <Wrapper>
+            <Input placeholder="Enter your email address"/>
+            <BlueActionButton>Request Pilot</BlueActionButton>
+        </Wrapper>
     );
 };
-
 export default RequestPlan;

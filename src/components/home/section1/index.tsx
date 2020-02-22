@@ -3,111 +3,83 @@ import styled from "styled-components";
 import { ReactComponent as HomepageImage } from "../../../assets/svg/public/blossom-jobs-hero-banner-01.svg";
 import mq from "../../../utils/mq";
 import RequestPlan from "./request-plan";
-
 const Container = styled.section`
-  margin: 0 !important;
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
-
+  width: 71%;
+  margin-top: -70px;
+  ${mq.mobile`
+    width: 90%;
+    flex-direction: column-reverse;
+  `}
   ${mq.tablet`
-    margin: 0 0 6em 0 !important;
+    flex-direction: row;
+  `}
+  ${mq.laptopSmall`
+    width: 71%;
   `}
 `;
-
 const Div = styled.div`
-  position: relative;
-  height: 80vh;
   display: flex;
   flex-flow: column;
-  text-align: center;
-  
+  align-items: flex-start;
+  width: 50%;
   h1 {
-    font-weight: 500;
+    font-weight: 600;
     padding-top: 2em;
     margin-bottom: 0.5em;
     line-height: 1.25;
   }
-
   span {
-    font-weight: 200;
+    font-size: 17px;
     margin-bottom: 0.5em;
     line-height: 1;
-    letter-spacing: 0.2rem;
   }
-
   #lastspan {
-    margin-bottom: 4vh;
+    margin-bottom: 5vh;
   }
-
-  ${mq.tablet`
-    justify-content: top;   
-    padding: 1em 0;
-    text-align: left;
-    align-items: flex-start;
-
+  ${mq.mobile`
+    width: 100%;
+    align-items: center;
     h1 {
-      margin-top: 0;
+      padding-top: 0.5em;
     }
   `}
+  ${mq.tablet`
+    width: 50%;
+    align-items: flex-start;
+  `}
 `;
-
 const Wrapper = styled.section`
   position: relative;
   height: 92vh;
-  ${mq.tablet`top: 0;`}
-  background-color: ${(props: any): any => props.theme.colors.jordyBlue};
-`;
-
-const Content = styled.div`
   display: flex;
-  flex: 1 1 auto;
-  height: 100%;
   justify-content: center;
   align-items: center;
-  padding: 10rem 1rem;
+  background-color: ${(props: any): any => props.theme.colors.jordyBlue};
 `;
-
-const Main = styled.main`
-  max-width: 1200px;
-  width: 100%;
-  height: 100%;
-`;
-
 const HomepageSVG = styled(HomepageImage)`
-  margin: 0;
-  width: 40vw;
+  width: 50%;
   height: 40vh;
+  ${mq.mobile`
+    width: 100%;
+  `}
+  ${mq.tablet`
+    width: 50%;
+  `}
 `;
-
-const ImageDiv = styled.div`
-  display: flex;
-  padding-top: 3.5vh;
-  padding-left: 8vw;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-`;
-
 const Section1: React.FC = () => (
-  <Wrapper>
-    <Content>
-      <Main>
-        <Container>
-          <Div>
-            <h1>Job postings data.</h1>
-            <span>Comprehensive. Realtime. No middlemen</span>
-            <span id="lastspan">Built for sales and analytics teams</span>
-            <RequestPlan />
-          </Div>
-          <ImageDiv>
-            <HomepageSVG />
-          </ImageDiv>
-        </Container>
-      </Main>
-    </Content>
-  </Wrapper>
+    <Wrapper>
+      <Container>
+        <Div>
+          <h1>Job postings data.</h1>
+          <span>Comprehensive. Realtime. No middlemen</span>
+          <span id="lastspan">Built for sales and analytics teams</span>
+          <RequestPlan />
+        </Div>
+        <HomepageSVG />
+      </Container>
+    </Wrapper>
 );
-
 export default Section1;

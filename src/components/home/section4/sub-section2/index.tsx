@@ -1,40 +1,42 @@
 import React from "react";
 import styled from "styled-components";
-
+import mq from "../../../../utils/mq";
 const Container = styled.section`
   margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
   position: relative;
-  height: 48vh;
   width: 100%;
   background-color: ${(props: any): any => props.theme.colors.jordyBlue};
   color: ${(props): any => props.theme.colors.white};
   };
+  ${mq.mobile`
+    padding: 2rem;
+  `}
+  ${mq.tablet`
+    padding: 4rem;
+  `}
 `;
-
-const Content = styled.div`
-  display: flex;
-  flex: 1 1 auto;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 1rem;
-  height: 100%;
-`;
-
 const Main = styled.main`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 1200px;
-  height: 100%;
+  ${mq.mobile`
+    flex-direction: column;
+  `}
+  ${mq.tablet`
+    flex-direction: row;
+  `}
 `;
-
 const Div = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: 1.5em;
-  width: 25%;
+  width: 50%;
   height: auto;
   background-color: ${(props): any => props.theme.colors.blue};
   h5 {
@@ -43,7 +45,6 @@ const Div = styled.div`
   h2 {
     margin: 0;
   }
-
   blockquote {
     width: 90%;
     font-weight: 500;
@@ -52,11 +53,17 @@ const Div = styled.div`
     margin: 0;
     color: ${props => props.theme.colors.white};
   }
+  ${mq.mobile`
+    width: 100%;
+    margin: 15px 0;
+  `}
+  ${mq.tablet`
+    width: 30%;
+    margin: 0;
+  `}
 `;
-
 const SubSection2: React.FC = () => (
-  <Container>
-    <Content>
+    <Container>
       <Main>
         <Div>
           <h5>Countries</h5>
@@ -86,8 +93,6 @@ const SubSection2: React.FC = () => (
           </blockquote>
         </Div>
       </Main>
-    </Content>
-  </Container>
+    </Container>
 );
-
 export default SubSection2;

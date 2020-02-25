@@ -49,7 +49,7 @@ const Fieldset = styled.fieldset`
     border: none;
     ouline: none;
     border-bottom: 1px solid
-      ${(props: any): string => props.theme.colors.primary};
+      ${(props: any): string => props.theme.colors.blue};
     padding: 0 2em 0.4em 0;
     width: 100%;
     background-color: transparent;
@@ -63,7 +63,7 @@ const Fieldset = styled.fieldset`
     padding: 0em 2em 0em 0em;
     border: none;
     border-bottom: 1px solid
-      ${(props: any): string => props.theme.colors.primary};
+      ${(props: any): string => props.theme.colors.blue};
   }
 `;
 

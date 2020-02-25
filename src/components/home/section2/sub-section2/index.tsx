@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import mq from '../../../../utils/mq';
-import RequestPlan from '../../section1/request-plan';
 import {Content} from "../../shared";
+import RequestPilot from "../../../shared/public/Navigation/RequestPilot";
 const Container = styled.section`
   margin: 0 !important;
   position: relative;
@@ -52,7 +52,7 @@ const SubSection2: React.FC = () => {
         <Content>
           <Main>
             <h4>The only intelligence platform for job postings</h4>
-            <RequestPlan />
+            <RequestPilot />
             <blockquote>
               Analyze millions of data-points on Job openings, titles,
               descriptions, sectors, skill sets, technology stacks and more

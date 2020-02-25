@@ -10,6 +10,7 @@ import * as yup from 'yup';
 import { trackClick } from '../../../utils/analyticsTracker';
 import { ContactForm } from '../../shared/form/ContactForm';
 import { BlueActionButton } from '../../shared/Buttons';
+import WhiteActionButton from "../../shared/Buttons/WhiteActionButton";
 
 interface FormValues {
   name: string;
@@ -60,36 +61,36 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <ContactForm
-      success={current.matches('success')}
-      loading={current.matches('loading')}
-      formError={{ type: 'error', message: errors.data }}
-      initialValues={initialValues}
-      validationSchema={validationSchema}
-      handleSubmit={handleSubmit}
-      successMessage={(): JSX.Element => <SuccessfulSubmission />}
-    >
-      <InputField type="text" name="name" placeholder="Name" />
-      <InputField
-        type="text"
-        name="email_address"
-        placeholder="Email address"
-      />
-      <TextArea name="message" placeholder="How can we help?" stroked />
-      <InputField type="text" name="company_name" placeholder="Company Name" />
-      <InputField type="text" name="job_title" placeholder="Job Title" />
-      <SelectField
-        name="country"
-        options={selectOptions}
-        placeholder="Country"
-      />
-      <BlueActionButton
-        disabled={current.matches('loading')}
-        onClick={trackClick}
+      <ContactForm
+          success={current.matches('success')}
+          loading={current.matches('loading')}
+          formError={{ type: 'error', message: errors.data }}
+          initialValues={initialValues}
+          validationSchema={validationSchema}
+          handleSubmit={handleSubmit}
+          successMessage={(): JSX.Element => <SuccessfulSubmission />}
       >
-        Schedule a meeting
-      </BlueActionButton>
-    </ContactForm>
+        <InputField type="text" name="name" placeholder="Name" />
+        <InputField
+            type="text"
+            name="email_address"
+            placeholder="Email address"
+        />
+        <TextArea name="message" placeholder="How can we help?" stroked />
+        <InputField type="text" name="company_name" placeholder="Company Name" />
+        <InputField type="text" name="job_title" placeholder="Job Title" />
+        <SelectField
+            name="country"
+            options={selectOptions}
+            placeholder="Country"
+        />
+        <WhiteActionButton
+            disabled={current.matches('loading')}
+            onClick={trackClick}
+        >
+          Schedule a meeting
+        </WhiteActionButton>
+      </ContactForm>
   );
 };
 

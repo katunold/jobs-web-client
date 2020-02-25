@@ -1,32 +1,38 @@
 import styled from 'styled-components';
 import mq from '../../../../utils/mq';
 
-const WhiteActionButton = styled.button`
+interface Props {
+  cued?: boolean;
+}
+
+const WhiteActionButton = styled.button<Props>`
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: ${(props: any): string => props.theme.colors.primary} !important;
-  font-weight: 700 !important;
-  padding: 0.9em 1.5em !important;
+  justify-content: space-evenly;
+  color: ${(props: any): string => props.theme.colors.white};
+  background-color: ${(props: any): string =>
+    props.theme.colors.blue} !important;
+  font-weight: 700;
+  padding: 0.9em 1.5em;
   border-radius: 2px;
-  border: 0.09rem solid ${(props: any): string => props.theme.colors.primary} !important;
+  border: 0.09rem solid
+    ${(props: any): string => props.theme.colors.blue};
   height: 48px;
+  margin: ${(props: any): any => (props.cued ? '0 1em 0 0' : 0)};
   font-size: 0.9em;
   min-width: 180px;
   width: 100%;
   text-align: center;
-  margin: 0 1em 0 0;
-  background-color: transparent !important;
   &:hover {
     background-color: ${(props: any): string =>
-      props.theme.colors.primary} !important;
-    color: white !important;
+    props.theme.colors.blue};
+    color: ${(props: any): string => props.theme.colors.white};
+    opacity: 0.5;
     cursor: pointer;
-    border: 0 !important;
   }
 
   ${mq.laptop`
-    width: inherit;
+    width: 100%;
     padding: 0.75em 1.5em;
   `};
 `;

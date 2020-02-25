@@ -53,6 +53,9 @@ interface Colors {
   arcadia: string;
   whiteSmoke: string;
   ghostThree: string;
+  lightGray: string;
+  lighterBlue: string;
+  deepBlue: string;
 }
 
 declare module 'styled-components' {

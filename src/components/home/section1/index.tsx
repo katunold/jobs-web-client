@@ -8,6 +8,7 @@ const Container = styled.section`
   justify-content: space-between;
   flex-direction: row;
   width: 71%;
+  max-width: 1200px;
   margin-top: -70px;
   ${mq.mobile`
     width: 90%;

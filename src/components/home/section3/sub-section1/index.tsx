@@ -3,7 +3,7 @@ import styled from "styled-components";
 import mq from "../../../../utils/mq";
 import { ReactComponent as Screen } from "../../../../assets/svg/public/screen-1.svg";
 import { Container, Content, Main, TextBox } from "../../shared/steps";
-import { BlueActionButton } from "../../../shared/Buttons";
+import RequestPilot from "../../../shared/public/Navigation/RequestPilot";
 const ImageSection = styled.div`
   display: flex;
   justify-content: flex-end;
@@ -34,7 +34,7 @@ const SubSection1: React.FC<Section1Props> = ({ section }: Section1Props) => (
               nibh. Praesent sapien massa, convallis a pellentesque nec, egestas
               non nisi.
             </p>
-            <BlueActionButton>Request Pilot</BlueActionButton>
+            <RequestPilot />
           </TextBox>
           <ImageSection>
             <ScreenIcon />

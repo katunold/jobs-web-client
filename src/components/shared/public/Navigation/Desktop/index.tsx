@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import mq from '../../../../../utils/mq';
 import RequestPilot from '../RequestPilot';
-import { trackClick } from '../../../../../utils/analyticsTracker';
 
 const Wrapper = styled.nav`
   height: 100%;
@@ -32,11 +30,6 @@ const Desktop: React.FC = () => {
   return (
     <Wrapper>
       <ul>
-        <li>
-          <Link className="link" to="/contact" onClick={trackClick}>
-            Contact us
-          </Link>
-        </li>
         <li>
           <RequestPilot />
         </li>

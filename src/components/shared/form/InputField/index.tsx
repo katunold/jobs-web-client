@@ -7,40 +7,41 @@ const Input = styled.input`
   width: 100%;
   height: 50px;
   border-radius: 2px;
-  border: 1px solid ${(props: any): string => props.theme.colors.border};
+  border: 1px solid
+    ${(props: any): string => props.theme.colors.lightGray};
   margin-bottom: 1em;
   padding: 0 1em;
   ::placeholder,
   ::-webkit-input-placeholder {
-    color: ${(props: any): string => props.theme.colors.darkGrey};
+    color: ${(props: any): string => props.theme.colors.waterLooTwo};
   }
   :-ms-input-placeholder {
-    color: ${(props: any): string => props.theme.colors.darkGrey};
+    color: ${(props: any): string => props.theme.colors.waterLooTwo};
   }
   :-webkit-autofill,
   :-webkit-autofill:hover,
   :-webkit-autofill:focus,
   :-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px
-      ${(props: any): string => props.theme.colors.lightAzureRadianceOne} inset !important;
+      ${(props: any): string => props.theme.colors.lighterBlue} inset !important;
   }
   :-internal-autofill-selected {
     background-color: ${(props: any): string =>
-      props.theme.colors.lightAzureRadianceOne};
+    props.theme.colors.lighterBlue};
   }
   :focus {
     background-color: ${(props: any): string =>
-      props.theme.colors.lightAzureRadianceOne};
+    props.theme.colors.lighterBlue};
   }
   :-moz-autofill,
   :-moz-autofill:hover,
   :-moz-autofill:focus,
   :-moz-autofill:active {
     -moz-box-shadow: 0 0 0 30px
-      ${(props: any): string => props.theme.colors.lightAzureRadianceOne} inset !important;
+      ${(props: any): string => props.theme.colors.lighterBlue} inset !important;
   }
   background-color: ${(props: any): string =>
-    props.theme.colors.lightAzureRadianceOne};
+    props.theme.colors.lighterBlue};
   ${(props: any): FlattenSimpleInterpolation =>
     props.stroked &&
     css`
@@ -67,7 +68,8 @@ const Input = styled.input`
       :-webkit-autofill:hover,
       :-webkit-autofill:focus,
       :-webkit-autofill:active {
-        -webkit-box-shadow: 0 0 0 30px #24395b inset !important;
+        -webkit-box-shadow: 0 0 0 30px ${props.theme.colors.deepBlue}
+          inset !important;
       }
       :-webkit-autofill {
         -webkit-text-fill-color: ${props.theme.colors.white} !important;
@@ -76,14 +78,14 @@ const Input = styled.input`
 `;
 
 const InputField: React.FC<any> = (props: any) => {
-  const [field, meta] = useField(props);
+    const [field, meta] = useField(props);
 
-  return (
-    <>
-      <Input {...field} {...props} error={meta.touched && meta.error} />
-      {meta.touched && meta.error ? <Error>{meta.error}</Error> : null}
-    </>
-  );
+    return (
+        <>
+            <Input {...field} {...props} error={meta.touched && meta.error} />
+            {meta.touched && meta.error ? <Error>{meta.error}</Error> : null}
+        </>
+    );
 };
 
 export default InputField;

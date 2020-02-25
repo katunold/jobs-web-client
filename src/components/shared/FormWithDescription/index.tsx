@@ -28,7 +28,7 @@ const Description = styled.div`
     margin-bottom: 1.5rem;
   }
   h3 {
-    color: ${(props: any): string => props.theme.colors.primary};
+    color: ${(props: any): string => props.theme.colors.blue};
     margin: 0;
     font-size: 1.5rem;
   }

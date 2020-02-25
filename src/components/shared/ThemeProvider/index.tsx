@@ -16,7 +16,7 @@ export const theme: DefaultTheme = {
     comet: '#52596a',
     linkWater: '#f0ffff',
     waterLoo: '#818795',
-    waterLooTwo: '#818896',
+    waterLooTwo: '#818796',
     ghost: '#c7cad4',
     mystic: '#e2e5ef',
     ghostTwo: '#c5c9d3',
@@ -35,7 +35,7 @@ export const theme: DefaultTheme = {
     oldBrick: '#8b1b1b',
     matisse: '#256eac',
     black: '#000000',
-    blue: '#105aff',
+    blue: '#007bd9',
     blackTwo: 'rgba(0, 0, 0, 0.5)',
     blackThree: 'rgba(0, 0, 0, 0.6)',
     lightBlue: 'rgba(60, 53, 247, 0.1)',
@@ -51,9 +51,12 @@ export const theme: DefaultTheme = {
     hanPurple: '#3C35F7',
     aluminium: 'rgb(140, 145, 149)',
     backgroundGrey: '#24395B',
+    lightGray: 'rgba(0, 0, 0, 0.1)',
     arcadia: '#3c35f7',
     whiteSmoke: '#ebe9e9',
-    ghostThree: 'rgba(197, 201, 211, 0.70)'
+    ghostThree: 'rgba(197, 201, 211, 0.70)',
+    lighterBlue: 'rgba(0, 145, 242, 0.1)',
+    deepBlue: '#005bb5'
   }
 };
 

@@ -8,24 +8,22 @@ import Home from "./components/home";
 import Contact from "./components/Contact";
 
 const App = () => {
-  return (
+    return (
 
-    <div className="App">
-        <AppMachineProvider>
-            <React.Fragment>
-                <Theme>
-                    <GlobalStyles />
-                    <BrowserRouter>
-                        <switch>
+        <div className="App">
+            <AppMachineProvider>
+                <React.Fragment>
+                    <Theme>
+                        <GlobalStyles />
+                        <BrowserRouter>
                             <Route exact path="/" component={Home}/>
                             <Route path="/contact" component={Contact}/>
-                        </switch>
-                    </BrowserRouter>
-                </Theme>
-            </React.Fragment>
-        </AppMachineProvider>
-    </div>
-  );
+                        </BrowserRouter>
+                    </Theme>
+                </React.Fragment>
+            </AppMachineProvider>
+        </div>
+    );
 };
 
 export default App;

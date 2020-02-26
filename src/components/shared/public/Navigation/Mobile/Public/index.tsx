@@ -23,7 +23,7 @@ const Public: React.FC<any> = (props: any) => {
   return (
     <Container>
       <li onClick={toggle}>
-        <RequestPilot />
+        <RequestPilot inverted={false}/>
       </li>
     </Container>
   );

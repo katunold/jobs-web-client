@@ -11,8 +11,7 @@ const Wrapper = styled.div`
 const RequestPlan: React.FC = () => {
     return(
         <Wrapper>
-            {/*<BlueActionButton as={Link} to="/contact">Request Pilot</BlueActionButton>*/}
-            <RequestPilot />
+            <RequestPilot inverted={false}/>
         </Wrapper>
     );
 };

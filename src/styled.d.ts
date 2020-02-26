@@ -56,6 +56,7 @@ interface Colors {
   lightGray: string;
   lighterBlue: string;
   deepBlue: string;
+  text: object;
 }
 
 declare module 'styled-components' {

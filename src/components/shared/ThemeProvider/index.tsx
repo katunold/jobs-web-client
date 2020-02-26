@@ -56,7 +56,10 @@ export const theme: DefaultTheme = {
     whiteSmoke: '#ebe9e9',
     ghostThree: 'rgba(197, 201, 211, 0.70)',
     lighterBlue: 'rgba(0, 145, 242, 0.1)',
-    deepBlue: '#005bb5'
+    deepBlue: '#005bb5',
+    text: {
+      black: '#1D212B'
+    }
   }
 };
 

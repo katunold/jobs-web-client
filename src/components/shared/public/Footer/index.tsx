@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import mq from '../../../../utils/mq';
-import LogoWithText from '../LogoWithText';
+import { LogoWithText as Logo } from '../LogoWithText';
 
 const Container = styled.footer`
   display: flex;
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
     <Container>
       <Content>
         <Copyright>
-          <LogoWithText textColor="white" logoColor="white" />
+          <Logo textColor="white" logoColor="white" />
           <p>
             Blossom is a venture capital deal sourcing intelligence platform.
           </p>

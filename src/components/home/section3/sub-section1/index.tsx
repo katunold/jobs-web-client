@@ -34,7 +34,7 @@ const SubSection1: React.FC<Section1Props> = ({ section }: Section1Props) => (
               nibh. Praesent sapien massa, convallis a pellentesque nec, egestas
               non nisi.
             </p>
-            <RequestPilot />
+            <RequestPilot inverted={false}/>
           </TextBox>
           <ImageSection>
             <ScreenIcon />

@@ -31,7 +31,7 @@ const Desktop: React.FC = () => {
     <Wrapper>
       <ul>
         <li>
-          <RequestPilot />
+          <RequestPilot inverted={false}/>
         </li>
       </ul>
     </Wrapper>

@@ -52,7 +52,7 @@ const SubSection2: React.FC = () => {
         <Content>
           <Main>
             <h4>The only intelligence platform for job postings</h4>
-            <RequestPilot />
+            <RequestPilot inverted={true}/>
             <blockquote>
               Analyze millions of data-points on Job openings, titles,
               descriptions, sectors, skill sets, technology stacks and more

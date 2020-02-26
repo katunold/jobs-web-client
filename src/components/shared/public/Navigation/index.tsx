@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import mq from '../../../../utils/mq';
-import Logo from '../LogoWithText';
+import { LogoWithTextLink as Logo } from '../LogoWithText';
 import Desktop from './Desktop';
 import Mobile from './Mobile';
+import {theme} from "../../ThemeProvider";
 
 interface WrapperProps {
   isTop: boolean;
@@ -70,8 +71,7 @@ const Navigation: React.FC = () => {
   return (
     <Wrapper isTop={isTop}>
       <Content>
-        <Logo
-          logoColor={`${(props: any): string => props.theme.colors.copy}`}
+        <Logo textColor={theme.colors.blue}
         />
         <Desktop />
         <Mobile />

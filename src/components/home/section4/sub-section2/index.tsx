@@ -39,16 +39,19 @@ const Div = styled.div`
   width: 50%;
   height: auto;
   background-color: ${(props): any => props.theme.colors.blue};
+  border-radius: 0 10px 10px 10px;
   h5 {
     margin: 10px 0;
+    font-size: 26px;
   }
   h2 {
     margin: 0;
+    font-size: 50px;
   }
   blockquote {
     width: 90%;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     text-align: left;
     margin: 0;
     color: ${props => props.theme.colors.white};
@@ -75,8 +78,8 @@ const SubSection2: React.FC = () => (
           </blockquote>
         </Div>
         <Div>
-          <h5>Countries</h5>
-          <h2>100+</h2>
+          <h5>Postings Per Week</h5>
+          <h2>10,000+</h2>
           <blockquote>
             Curabitur aliquet quam id dui posuere blandit. Quisque velit nisi,
             pretium ut lacinia in, elementum id enim. Vivamus magna justo,
@@ -84,8 +87,8 @@ const SubSection2: React.FC = () => (
           </blockquote>
         </Div>
         <Div>
-          <h5>Countries</h5>
-          <h2>100+</h2>
+          <h5>Companies</h5>
+          <h2>10M+</h2>
           <blockquote>
             Curabitur aliquet quam id dui posuere blandit. Quisque velit nisi,
             pretium ut lacinia in, elementum id enim. Vivamus magna justo,

@@ -58,6 +58,7 @@ interface Colors {
   deepBlue: string;
   text: object;
   linkWater3: string;
+  blue1: string;
 }
 
 declare module 'styled-components' {

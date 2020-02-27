@@ -35,9 +35,6 @@ const Footer: React.FC = () => {
       <Content>
         <Copyright>
           <Logo textColor="white" logoColor="white" />
-          <p>
-            Blossom is a venture capital deal sourcing intelligence platform.
-          </p>
           <p>© {new Date().getFullYear()} Blossom Inc. All rights reserved.</p>
         </Copyright>
       </Content>

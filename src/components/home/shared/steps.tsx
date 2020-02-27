@@ -3,7 +3,7 @@ import mq from "../../../utils/mq";
 export const Container = styled.section`
   position: relative;
   width: 100%;
-  background-color: ${(props): any => props.theme.colors.linkWater};
+  background-color: ${(props): any => props.theme.colors.linkWater3};
   color: ${(props): any => props.theme.colors.white};
   };
 `;
@@ -60,11 +60,12 @@ export const TextBox = styled.div`
   height: auto;
   h1 {
     font-weight: 500px;
-    margin: 0 0 40px 0;
+    margin: 0 0 -20px -20px;
     color: ${(props): any => props.theme.colors.darkGrey};
   }
   h4 {
     font-weight: 500px;
+    font-size: 1.5em;
     line-height: 1;
     letter-spacing: 0.1rem;
     color: ${(props): any => props.theme.colors.black};

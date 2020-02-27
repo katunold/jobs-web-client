@@ -15,6 +15,7 @@ export const theme: DefaultTheme = {
     lightBlueBackgroundColor: 'rgba(0, 145, 242, 0.1)',
     comet: '#52596a',
     linkWater: '#f0ffff',
+    linkWater3: '#f2eff8',
     waterLoo: '#818795',
     waterLooTwo: '#818796',
     ghost: '#c7cad4',

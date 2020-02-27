@@ -27,13 +27,13 @@ const Div = styled.div`
   align-items: flex-start;
   width: 50%;
   h1 {
-    font-size: 58;
+    font-size: 3em;
     padding-top: 2em;
     margin-bottom: 0.5em;
     line-height: 48px;
   }
   span {
-    font-size: 30;
+    font-size: 1.1em;
     margin-bottom: 0.5em;
     font-weight: normal;
     line-height: 1;

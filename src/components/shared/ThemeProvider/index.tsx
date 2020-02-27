@@ -37,6 +37,7 @@ export const theme: DefaultTheme = {
     matisse: '#256eac',
     black: '#000000',
     blue: '#007bd9',
+    blue1: '#3E4FF7',
     blackTwo: 'rgba(0, 0, 0, 0.5)',
     blackThree: 'rgba(0, 0, 0, 0.6)',
     lightBlue: 'rgba(60, 53, 247, 0.1)',

@@ -38,7 +38,7 @@ const Div = styled.div`
   padding: 1.5em;
   width: 50%;
   height: auto;
-  background-color: ${(props): any => props.theme.colors.blue};
+  background-color: ${(props): any => props.theme.colors.blue1};
   border-radius: 0 10px 10px 10px;
   h5 {
     margin: 10px 0;

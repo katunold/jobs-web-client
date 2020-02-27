@@ -7,7 +7,7 @@ const Container = styled.section`
   margin: 0 !important;
   position: relative;
   height: 40%;
-  background-color: ${(props: any): any => props.theme.colors.blue};
+  background-color: ${(props: any): any => props.theme.colors.blue1};
 `;
 const Main = styled.main`
   display: flex;

@@ -42,17 +42,18 @@ const Div = styled.div`
   border-radius: 0 10px 10px 10px;
   h5 {
     margin: 10px 0;
-    font-size: 26px;
+    font-size: 22px;
   }
   h2 {
     margin: 0;
-    font-size: 50px;
+    font-size: 44px;
   }
   blockquote {
     width: 90%;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     text-align: left;
+    font-weight: bold;
     margin: 0;
     color: ${props => props.theme.colors.white};
   }

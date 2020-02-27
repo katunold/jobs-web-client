@@ -7,7 +7,7 @@ const Container = styled.section`
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  width: 71%;
+  width: 75%;
   max-width: 1200px;
   margin-top: -70px;
   ${mq.mobile`
@@ -18,7 +18,7 @@ const Container = styled.section`
     flex-direction: row;
   `}
   ${mq.laptopSmall`
-    width: 71%;
+    max-width: 1200px;
   `}
 `;
 const Div = styled.div`
@@ -27,14 +27,15 @@ const Div = styled.div`
   align-items: flex-start;
   width: 50%;
   h1 {
-    font-weight: 600;
+    font-size: 58;
     padding-top: 2em;
     margin-bottom: 0.5em;
-    line-height: 1.25;
+    line-height: 48px;
   }
   span {
-    font-size: 17px;
+    font-size: 30;
     margin-bottom: 0.5em;
+    font-weight: normal;
     line-height: 1;
   }
   #lastspan {

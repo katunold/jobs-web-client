@@ -43,8 +43,8 @@ const Content = styled.div`
   max-width: 1200px;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  margin: 1rem;
+  width: 90%;
+  margin: 0 auto;
 
   ${mq.tablet`margin: 0 2rem;`}
   ${mq.laptop`margin: 0 5rem;`}

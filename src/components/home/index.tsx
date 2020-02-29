@@ -21,7 +21,7 @@ const Wrapper = styled.div`
 
 const Home: React.FC = () => (
   <Wrapper>
-      <Navigation />
+      <Navigation isHomePage={true}/>
       <Section1/>
       <Section4 />
       <Section2 />

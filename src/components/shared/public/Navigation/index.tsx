@@ -8,7 +8,9 @@ import {theme} from "../../ThemeProvider";
 
 interface WrapperProps {
   isTop: boolean;
+  homepage: boolean;
 }
+
 
 const Wrapper = styled('div')<WrapperProps>`
   position: fixed;
@@ -22,14 +24,14 @@ const Wrapper = styled('div')<WrapperProps>`
   transition: all 0.25s linear;
   padding: 0.01px;
 
-  background-color: ${(props: any): any => props.theme.colors.catSkillWhite};
+  background-color: ${ (props: any) => props.homepage ? '#CEDAFD' : '#f5f7fa'};
   border-bottom: 1px solid transparent;
   box-shadow: none;
 
   ${(props): any =>
     !props.isTop &&
     `
-    background-color: ${(props: any): string => props.theme.colors.white};
+    background-color: #f5f7fa;
     border-bottom: 1px solid ${(props: any): string =>
       props.theme.colors.border}};
     box-shadow: 0 1px 2px 0 rgba(60,64,67,.07), 0 2px 6px 2px rgba(60,64,67,.07);
@@ -50,9 +52,12 @@ const Content = styled.div`
   ${mq.laptop`margin: 0 5rem;`}
 `;
 
-const Navigation: React.FC = () => {
-  const [isTop, setIsTop] = useState(true);
+interface HomepageProps {
+  isHomePage: boolean;
+}
 
+const Navigation: React.FC<HomepageProps> = ({isHomePage}: HomepageProps) => {
+  const [isTop, setIsTop] = useState(true);
   useEffect(() => {
     const onScroll = (): any => {
       const scrollCheck = window.scrollY === 0;
@@ -69,7 +74,7 @@ const Navigation: React.FC = () => {
   }, [isTop, setIsTop]);
 
   return (
-    <Wrapper isTop={isTop}>
+    <Wrapper homepage={isHomePage} isTop={isTop}>
       <Content>
         <Logo textColor={theme.colors.blue}
         />

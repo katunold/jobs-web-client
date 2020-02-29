@@ -59,7 +59,7 @@ const Main = styled.main`
 const Contact: React.FC = () => {
   return (
     <Wrapper>
-      <Navigation />
+      <Navigation isHomePage={false}/>
       <Content>
         <Main>
           <Container>

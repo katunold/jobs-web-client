@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 const RequestPlan: React.FC = () => {
     return(
         <Wrapper>
-            <RequestPilot inverted={false}/>
+            <RequestPilot inverted={false} large={false}/>
         </Wrapper>
     );
 };

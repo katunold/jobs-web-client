@@ -23,9 +23,10 @@ const Home: React.FC = () => (
   <Wrapper>
       <Navigation />
       <Section1/>
+      <Section4 />
       <Section2 />
       <Section3 />
-      <Section4 />
+      
       <Footer />
   </Wrapper>
 );

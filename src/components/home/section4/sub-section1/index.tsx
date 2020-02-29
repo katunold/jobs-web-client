@@ -47,7 +47,7 @@ const SubSection1: React.FC = () => (
     <Container>
         <Content>
             <Main>
-                <h3>You're in good company</h3>
+                <h2>The CIP of Leading Revenue & Analytics Teams</h2>
                 <Div>
                     <MongoDBIcon />
                     <MongoDBIcon />

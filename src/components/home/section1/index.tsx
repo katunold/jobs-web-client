@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { ReactComponent as HomepageImage } from "../../../assets/svg/public/blossom-jobs-hero-banner-01.svg";
 import mq from "../../../utils/mq";
 import RequestPlan from "./request-plan";
+import RequestPilot from "../../shared/public/Navigation/RequestPilot";
 const Container = styled.section`
   display: flex;
   justify-content: space-between;
@@ -75,10 +76,9 @@ const Section1: React.FC = () => (
     <Wrapper>
       <Container>
         <Div>
-          <h1>Job postings data.</h1>
-          <span>Comprehensive. Realtime. No middlemen</span>
-          <span id="lastspan">Built for sales and analytics teams</span>
-          <RequestPlan />
+          <h1>The only customer intent data powered by job postings.</h1>
+          <span id="lastspan">Blossom enables high growth sales teams to identify the moments potential customers are searching for their products and services.</span>
+          <RequestPilot inverted={false} large={false}/>
         </Div>
         <HomepageSVG />
       </Container>

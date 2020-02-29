@@ -36,8 +36,7 @@ export const theme: DefaultTheme = {
     oldBrick: '#8b1b1b',
     matisse: '#256eac',
     black: '#000000',
-    blue: '#007bd9',
-    blue1: '#3E4FF7',
+    blue: '#232f99',
     blackTwo: 'rgba(0, 0, 0, 0.5)',
     blackThree: 'rgba(0, 0, 0, 0.6)',
     lightBlue: 'rgba(60, 53, 247, 0.1)',
@@ -60,7 +59,7 @@ export const theme: DefaultTheme = {
     lighterBlue: 'rgba(0, 145, 242, 0.1)',
     deepBlue: '#005bb5',
     text: {
-      black: '#1D212B'
+      black: '#242248'
     }
   }
 };

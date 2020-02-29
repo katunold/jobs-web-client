@@ -38,7 +38,7 @@ const Div = styled.div`
   padding: 1.5em;
   width: 50%;
   height: auto;
-  background-color: ${(props): any => props.theme.colors.blue1};
+  background-color: ${(props): any => props.theme.colors.blue};
   border-radius: 0 10px 10px 10px;
   h5 {
     margin: 10px 0;
@@ -72,29 +72,14 @@ const SubSection2: React.FC = () => (
         <Div>
           <h5>Countries</h5>
           <h2>100+</h2>
-          <blockquote>
-            Curabitur aliquet quam id dui posuere blandit. Quisque velit nisi,
-            pretium ut lacinia in, elementum id enim. Vivamus magna justo,
-            lacinia eget consectetur sed, convallis at tellus.
-          </blockquote>
         </Div>
         <Div>
           <h5>Postings Per Week</h5>
           <h2>10,000+</h2>
-          <blockquote>
-            Curabitur aliquet quam id dui posuere blandit. Quisque velit nisi,
-            pretium ut lacinia in, elementum id enim. Vivamus magna justo,
-            lacinia eget consectetur sed, convallis at tellus.
-          </blockquote>
         </Div>
         <Div>
           <h5>Companies</h5>
           <h2>10M+</h2>
-          <blockquote>
-            Curabitur aliquet quam id dui posuere blandit. Quisque velit nisi,
-            pretium ut lacinia in, elementum id enim. Vivamus magna justo,
-            lacinia eget consectetur sed, convallis at tellus.
-          </blockquote>
         </Div>
       </Main>
     </Container>

@@ -7,7 +7,7 @@ const Container = styled.section`
   margin: 0 !important;
   position: relative;
   height: 40%;
-  background-color: ${(props: any): any => props.theme.colors.blue1};
+  background-color: ${(props: any): any => props.theme.colors.blue};
 `;
 const Main = styled.main`
   display: flex;
@@ -52,7 +52,7 @@ const SubSection2: React.FC = () => {
         <Content>
           <Main>
             <h4>The only intelligence platform for job postings</h4>
-            <RequestPilot inverted={true}/>
+            <RequestPilot inverted={true} large={false}/>
             <blockquote>
               Analyze millions of data-points on Job openings, titles,
               descriptions, sectors, skill sets, technology stacks and more

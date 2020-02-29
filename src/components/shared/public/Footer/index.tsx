@@ -7,7 +7,7 @@ const Container = styled.footer`
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: ${(props: any): string => props.theme.colors.copy};
+  background-color: ${(props: any): string => props.theme.colors.blue};
   color: ${(props: any): string => props.theme.colors.white};
   padding: 5rem 1rem;
   ${mq.tablet`padding: 5rem 2rem;`}

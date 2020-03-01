@@ -27,6 +27,7 @@ const Div = styled.div`
   flex-flow: column;
   align-items: flex-start;
   width: 50%;
+  margin-right: 5vw;
   h1 {
     font-size: 3em;
     padding-top: 2em;
@@ -56,7 +57,7 @@ const Div = styled.div`
 `;
 const Wrapper = styled.section`
   position: relative;
-  height: 92vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;

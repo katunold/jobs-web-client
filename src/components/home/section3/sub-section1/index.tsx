@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import mq from "../../../../utils/mq";
 import { ReactComponent as Screen } from "../../../../assets/svg/public/screen-1.svg";
+import { ReactComponent as ComprehensiveCoverage } from "../../../../assets/svg/home/comprehensive-coverage.svg";
 import { Container, Content, Main, TextBox } from "../../shared/steps";
 import RequestPilot from "../../../shared/public/Navigation/RequestPilot";
 const ImageSection = styled.div`
@@ -14,33 +15,34 @@ const ImageSection = styled.div`
     justify-content: flex-end;
   `}
 `;
-const ScreenIcon = styled(Screen)`
+const ComprehensiveCoverageIcon = styled(ComprehensiveCoverage)`
   width: 85%;
   height: 40vh;
 `;
 interface Section1Props {
   section: number;
+  title: string;
+  description: string;
+  icon: string
 };
-const SubSection1: React.FC<Section1Props> = ({ section }: Section1Props) => (
-    <Container>
+const SubSection1: React.FC<Section1Props> = (props: Section1Props) => {
+  const { section, title, description, icon: Icon } = props;
+    return (<Container>
       <Content>
         <Main>
           <TextBox>
             <h1>#{section}</h1>
-            <h4>Lorem ipsum dolor sit amet</h4>
+            <h4>{title}</h4>
             <p>
-              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-              Nulla quis lorem ut libero malesuada feugiat. Sed porttitor lectus
-              nibh. Praesent sapien massa, convallis a pellentesque nec, egestas
-              non nisi.
+              {description}
             </p>
             <RequestPilot inverted={false} large={false}/>
           </TextBox>
           <ImageSection>
-            <ScreenIcon />
+            <Icon/>
           </ImageSection>
         </Main>
       </Content>
-    </Container>
-);
+    </Container>)
+};
 export default SubSection1;

@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ReactComponent as Mongo } from '../../../../assets/svg/public/mongodb-logo.svg';
+import { ReactComponent as Bain } from '../../../../assets/svg/home/bain-ventures-logo.svg';
+import { ReactComponent as Mars } from '../../../../assets/svg/home/mars-logo.svg';
 
 const Container = styled.section`
   margin: 0 !important;
@@ -27,6 +29,9 @@ const Main = styled.main`
   align-items: center;
   width: 1200px;
   height: 100%;
+  h2 {
+    margin-top: 45px;
+  }
 `;
 
 const Div = styled.div`
@@ -43,15 +48,25 @@ const MongoDBIcon = styled(Mongo)`
   height: 5vh;
 `;
 
+const BainIcon = styled(Bain)`
+  width: 18%;
+  height: 5vh;
+`;
+
+const MarsIcon = styled(Mars)`
+  width: 25%;
+  height: 5vh;
+`;
+
 const SubSection1: React.FC = () => (
     <Container>
         <Content>
             <Main>
                 <h2>The CIP of Leading Revenue & Analytics Teams</h2>
                 <Div>
+                    <BainIcon />
                     <MongoDBIcon />
-                    <MongoDBIcon />
-                    <MongoDBIcon />
+                    <MarsIcon />
                 </Div>
             </Main>
         </Content>

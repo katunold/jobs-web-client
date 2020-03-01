@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import mq from "../../../../utils/mq";
-import { ReactComponent as Screen } from "../../../../assets/svg/public/screen-2.svg";
+import { ReactComponent as CustomizableKeywords } from "../../../../assets/svg/home/customizable-keywords.svg";
 import { Content, Main2, TextBox } from "../../shared/steps";
 const Container = styled.section`
   margin: 0 !important;
@@ -21,7 +21,7 @@ const ImageSection = styled.div`
     justify-content: flex-start;
   `}
 `;
-const ScreenIcon = styled(Screen)`
+const CustomizableKeywordsIcon = styled(CustomizableKeywords)`
   width: 85%;
   height: 40vh;
 `;
@@ -30,16 +30,14 @@ const SubSection2: React.FC = () => (
         <Content>
             <Main2>
                 <ImageSection>
-                    <ScreenIcon />
+                    <CustomizableKeywordsIcon />
                 </ImageSection>
                 <TextBox>
                     <h1>#2</h1>
-                    <h4>Lorem ipsum dolor sit amet</h4>
+                    <h4>Customizable Keywords & Data Feeds</h4>
                     <p>
-                        The best thing that can happen to you is Blossom mangement et, porttitor at sem.
-                        Nulla quis lorem ut libero malesuada feugiat. Sed porttitor lectus
-                        nibh. Praesent sapien massa, convallis a pellentesque nec, egestas
-                        non nisi.
+                        Search and filter across the entire text of job postings, using the keywords, titles
+                        skills, certifications, sector and company sizing data points that matter most to your growth
                     </p>
                 </TextBox>
             </Main2>

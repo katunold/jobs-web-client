@@ -29,7 +29,7 @@ const Container = styled.button`
 
 const RequestPilot: React.FC<Inversion> = (props) => {
     inverted = props.inverted;
-    large = props.inverted;
+    large = props.large;
   return (
     <Container as={Link} to="/contact" onClick={trackClick}>
       Learn More

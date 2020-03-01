@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import mq from "../../../utils/mq";
 import SubSection1 from "./sub-section1";
-import SubSection2 from "./sub-section2";
+import SubSection2 from "../section2/sub-section2";
 
 const Wrapper = styled.section`
   position: relative;

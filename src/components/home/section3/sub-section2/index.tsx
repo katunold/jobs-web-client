@@ -14,6 +14,7 @@ const Container = styled.section`
 const ImageSection = styled.div`
   display: flex;
   justify-content: flex-start;
+  width: 50%;
   ${mq.mobile`
     justify-content: center;
   `}
@@ -22,8 +23,9 @@ const ImageSection = styled.div`
   `}
 `;
 const CustomizableKeywordsIcon = styled(CustomizableKeywords)`
-  width: 85%;
+  width: 50vw;
   height: 40vh;
+  margin-right: 15.5%;
 `;
 const SubSection2: React.FC = () => (
     <Container>

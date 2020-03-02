@@ -13,12 +13,12 @@ const Wrapper = styled.section`
   ${mq.tablet`top: 0;`}
 `;
 const ComprehensiveCoverageIcon = styled(ComprehensiveCoverage)`
-  width: 85%;
-  height: 40vh;
+  width: 30vw;
+  height: 35vh;
 `;
 const RealTimeDataIcon = styled(RealTimeData)`
-  width: 85%;
-  height: 40vh;
+  width: 30vw;
+  height: 35vh;
 `;
 const Section3: React.FC = () => (
     <Wrapper>

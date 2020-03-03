@@ -54,18 +54,15 @@ const Card = styled.div`
 `;
 const FullyIndexedIcon = styled(Indexed)`
   margin-top: 5vh;
-  width: 20vw;
-  height: 30%;
+  width: 50%;
 `;
 const FullCoverageIcon = styled(Coverage)`
   margin-top: 5vh;
-  width: 20vw;
-  height: 30%;
+  width: 50%;
 `;
 const FullPackageIcon = styled(Package)`
   margin-top: 5vh;
-  width: 20vw;
-  height: 40%;
+  width: 50%;
 `;
 const SubSection1: React.FC = () => {
   return (

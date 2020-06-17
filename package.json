@@ -2,6 +2,7 @@
   "name": "jobs-web-client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://katunold.github.io/jobs-web-client",
   "dependencies": {
     "@material-ui/core": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
@@ -31,6 +32,8 @@
     "react-icons": "latest"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node_modules/.bin/react-scripts start",
     "build": "node_modules/.bin/react-scripts build",
     "test": "node_modules/.bin/react-scripts test",
@@ -52,15 +55,16 @@
     ]
   },
   "devDependencies": {
-    "@types/node": "^12.12.26",
-    "@types/styled-components": "^4.4.2",
     "@babel/plugin-proposal-optional-chaining": "^7.7.5",
+    "@types/node": "^12.12.26",
     "@types/react": "^16.9.11",
+    "@types/styled-components": "^4.4.2",
     "@typescript-eslint/eslint-plugin": "^2.7.0",
     "@typescript-eslint/parser": "^2.7.0",
     "eslint-config-prettier": "^6.5.0",
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-prettier": "^3.1.1",
+    "gh-pages": "^3.0.0",
     "husky": "^3.1.0",
     "prettier": "^1.19.1"
   }

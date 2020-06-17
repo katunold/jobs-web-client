@@ -75,6 +75,7 @@ export const TextBox = styled.div`
     font-weight: 500;
     font-size: 16px;
     text-align: left;
+    width: 95%;
     margin-bottom: 2em;
     color: ${(props): any => props.theme.colors.black};
   }

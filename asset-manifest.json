@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/jobs-web-client/static/css/main.98631095.chunk.css",
+    "main.js": "/jobs-web-client/static/js/main.8a496ec7.chunk.js",
+    "main.js.map": "/jobs-web-client/static/js/main.8a496ec7.chunk.js.map",
+    "runtime-main.js": "/jobs-web-client/static/js/runtime-main.37fa3d2b.js",
+    "runtime-main.js.map": "/jobs-web-client/static/js/runtime-main.37fa3d2b.js.map",
+    "static/js/2.7140a8d7.chunk.js": "/jobs-web-client/static/js/2.7140a8d7.chunk.js",
+    "static/js/2.7140a8d7.chunk.js.map": "/jobs-web-client/static/js/2.7140a8d7.chunk.js.map",
+    "index.html": "/jobs-web-client/index.html",
+    "precache-manifest.156828557f06366a46d1e5ea117f1ff3.js": "/jobs-web-client/precache-manifest.156828557f06366a46d1e5ea117f1ff3.js",
+    "service-worker.js": "/jobs-web-client/service-worker.js",
+    "static/css/main.98631095.chunk.css.map": "/jobs-web-client/static/css/main.98631095.chunk.css.map",
+    "static/js/2.7140a8d7.chunk.js.LICENSE.txt": "/jobs-web-client/static/js/2.7140a8d7.chunk.js.LICENSE.txt",
+    "static/media/bain-ventures-logo.48ed7462.svg": "/jobs-web-client/static/media/bain-ventures-logo.48ed7462.svg",
+    "static/media/blossom-jobs-hero-banner-01.d4dacbc8.svg": "/jobs-web-client/static/media/blossom-jobs-hero-banner-01.d4dacbc8.svg",
+    "static/media/blossom-logo-blue.svg": "/jobs-web-client/static/media/blossom-logo-blue.eeb7e9e3.svg",
+    "static/media/comprehensive-coverage.692ba8fa.svg": "/jobs-web-client/static/media/comprehensive-coverage.692ba8fa.svg",
+    "static/media/customizable-keywords.912e0468.svg": "/jobs-web-client/static/media/customizable-keywords.912e0468.svg",
+    "static/media/full-coverage-01.d6372ae8.svg": "/jobs-web-client/static/media/full-coverage-01.d6372ae8.svg",
+    "static/media/full-package.b0f2b8b2.svg": "/jobs-web-client/static/media/full-package.b0f2b8b2.svg",
+    "static/media/fully-indexed-01.08276128.svg": "/jobs-web-client/static/media/fully-indexed-01.08276128.svg",
+    "static/media/mars-logo.5ac0a1c6.svg": "/jobs-web-client/static/media/mars-logo.5ac0a1c6.svg",
+    "static/media/mongodb-logo.d2075c01.svg": "/jobs-web-client/static/media/mongodb-logo.d2075c01.svg",
+    "static/media/index.scss": "/jobs-web-client/static/media/nunito-v12-latin-regular.e5875b85.woff",
+    "static/media/real-time-data.9bd7e643.svg": "/jobs-web-client/static/media/real-time-data.9bd7e643.svg",
+    "static/media/request-demo.svg": "/jobs-web-client/static/media/request-demo.6bbb75b0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.37fa3d2b.js",
+    "static/js/2.7140a8d7.chunk.js",
+    "static/css/main.98631095.chunk.css",
+    "static/js/main.8a496ec7.chunk.js"
+  ]
+}

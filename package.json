@@ -19,7 +19,7 @@
     "check-types": "latest",
     "firebase": "latest",
     "formik": "latest",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-ga": "latest",
